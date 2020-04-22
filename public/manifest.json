@@ -1,5 +1,6 @@
 {
-  "name": "App",
+  "short_name": "Chat Bots",
+  "name": "My Chat Bots!",
   "icons": [
     {
       "src": "/android-icon-36x36.png",
