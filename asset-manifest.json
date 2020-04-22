@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.8be872cb.chunk.css",
-    "main.js": "/static/js/main.c32321de.chunk.js",
-    "main.js.map": "/static/js/main.c32321de.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4ad7ff05.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4ad7ff05.js.map",
-    "static/js/2.73cf0eb2.chunk.js": "/static/js/2.73cf0eb2.chunk.js",
-    "static/js/2.73cf0eb2.chunk.js.map": "/static/js/2.73cf0eb2.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.ee9e3e0593d45be3ff32940b1e11030e.js": "/precache-manifest.ee9e3e0593d45be3ff32940b1e11030e.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.8be872cb.chunk.css.map": "/static/css/main.8be872cb.chunk.css.map",
-    "static/js/2.73cf0eb2.chunk.js.LICENSE.txt": "/static/js/2.73cf0eb2.chunk.js.LICENSE.txt"
+    "main.css": "/chatbots/static/css/main.8be872cb.chunk.css",
+    "main.js": "/chatbots/static/js/main.c32321de.chunk.js",
+    "main.js.map": "/chatbots/static/js/main.c32321de.chunk.js.map",
+    "runtime-main.js": "/chatbots/static/js/runtime-main.4f272132.js",
+    "runtime-main.js.map": "/chatbots/static/js/runtime-main.4f272132.js.map",
+    "static/js/2.d141893f.chunk.js": "/chatbots/static/js/2.d141893f.chunk.js",
+    "static/js/2.d141893f.chunk.js.map": "/chatbots/static/js/2.d141893f.chunk.js.map",
+    "index.html": "/chatbots/index.html",
+    "precache-manifest.9ab5da4f69c897171dc1b32fa5571cd4.js": "/chatbots/precache-manifest.9ab5da4f69c897171dc1b32fa5571cd4.js",
+    "service-worker.js": "/chatbots/service-worker.js",
+    "static/css/main.8be872cb.chunk.css.map": "/chatbots/static/css/main.8be872cb.chunk.css.map",
+    "static/js/2.d141893f.chunk.js.LICENSE.txt": "/chatbots/static/js/2.d141893f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4ad7ff05.js",
-    "static/js/2.73cf0eb2.chunk.js",
+    "static/js/runtime-main.4f272132.js",
+    "static/js/2.d141893f.chunk.js",
     "static/css/main.8be872cb.chunk.css",
     "static/js/main.c32321de.chunk.js"
   ]
