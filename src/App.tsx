@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Home from "./pages/Home";
 import ChatBot from "./pages/ChatBot";
 import Header from "./components/Header";
@@ -10,12 +15,15 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <BrowserRouter basename="chatbots">
+      <Router basename="/">
         <AppContainer>
-          <Route exact path="/" component={Home} />
-          <Route path="/:shortName" component={ChatBot} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/:shortName" component={ChatBot} />
+            <Redirect to="/" />
+          </Switch>
         </AppContainer>
-      </BrowserRouter>
+      </Router>
       <Footer />
     </div>
   );
