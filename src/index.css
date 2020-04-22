@@ -36,3 +36,9 @@ h2 {
 span {
   color: #85898e;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

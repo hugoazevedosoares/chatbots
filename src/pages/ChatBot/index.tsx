@@ -72,6 +72,9 @@ const ChatBot: React.FC = () => {
           Created at {new Date(contact.created).toLocaleDateString()}
         </DateTime>
       </ChatBotHeader>
+
+      <Separator />
+
       <CardsContainer>
         <InfoCard area="region" style={{ justifyContent: "center" }}>
           <ShortName>Region and idiom</ShortName>

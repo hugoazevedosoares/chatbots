@@ -8,7 +8,7 @@ import { AppContainer } from "./styles";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <BrowserRouter basename="chatbots">
         <AppContainer>

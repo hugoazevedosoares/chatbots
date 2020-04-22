@@ -5,8 +5,7 @@ export const ChatBotContainer = styled.div``;
 
 export const CardsContainer = styled.div`
   display: grid;
-  width: 100%;
-  height: 500px;
+  min-height: 500px;
   grid-template-areas: "region active active status" "received received sent status";
   gap: 1em;
   margin-bottom: 2em;
