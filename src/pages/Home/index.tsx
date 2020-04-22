@@ -1,33 +1,31 @@
-import React, { useState, useEffect } from "react";
-import { fetchContacts, saveContacts } from "../../services/contactService";
-import { Contact } from "../../types/contact";
-import ContactList from "../../components/ContactList";
-import {
-  HomeContainer,
-  Input,
-  TopRow,
-  Title,
-  Image,
-  FloatRight,
-} from "./styles";
+import React, { useEffect, useState } from "react";
+
 import Button from "../../components/Button";
+import ContactList from "../../components/ContactList";
 import OrganizeBlocks from "../../resources/images/organize-blocks.png";
 import OrganizeList from "../../resources/images/organize-list.png";
+import { fetchContacts, saveContacts } from "../../services/contactService";
+import { useLayoutState, useOrderState } from "../../services/layoutService";
+import { Contact } from "../../types/contact";
+import {
+  FloatRight,
+  HomeContainer,
+  Image,
+  Input,
+  Title,
+  TopRow,
+} from "./styles";
 
 export default function Home() {
   const [contacts, setContacts] = useState<Contact[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [cardMode, setCardMode] = useState<boolean>(false);
-  const [orderByName, setOrderByName] = useState<boolean>(true);
+
+  const [cardMode, setCardMode] = useLayoutState<boolean>(false);
+  const [orderByName, setOrderByName] = useOrderState<boolean>(true);
+
   const [search, setSearch] = useState<string>("");
 
   useEffect(() => {
-    fetchContacts({ search })
-      .then((contacts) => {
-        setContacts(contacts);
-        setLoading(false);
-      })
-      .finally(() => setLoading(false));
+    fetchContacts({ search }).then(setContacts);
   }, [search]);
 
   function updateSearch(event: React.ChangeEvent<HTMLInputElement>) {
@@ -103,8 +101,6 @@ export default function Home() {
           />
         </FloatRight>
       </TopRow>
-
-      {loading && <h2>Loading...</h2>}
 
       {contacts.length ? (
         <ContactList
