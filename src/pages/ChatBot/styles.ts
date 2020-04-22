@@ -34,7 +34,7 @@ export const ImageWithDoubleText = styled.div`
   width: 10%;
   grid-area: main;
   grid-template-areas: "image name" "image shortname";
-  grid-template-columns: 1fr minmax(150px, 1fr);
+  grid-template-columns: 1fr minmax(160px, 1fr);
 `;
 
 export const Image = styled.img<{ bg: string }>`
