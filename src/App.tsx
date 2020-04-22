@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <BrowserRouter>
+      <BrowserRouter basename="chatbots">
         <AppContainer>
           <Route exact path="/" component={Home} />
           <Route path="/:shortName" component={ChatBot} />

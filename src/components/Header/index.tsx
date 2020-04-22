@@ -17,7 +17,7 @@ const Image = styled.img``;
 export default function Header() {
   return (
     <HeaderContainer>
-      <a href="/">
+      <a href="/chatbots">
         <Image src={Logo} alt={"Blip"} />
       </a>
     </HeaderContainer>
