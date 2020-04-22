@@ -48,14 +48,18 @@ const ContactList: React.FunctionComponent<Props> = ({
       {favorites.length ? (
         <>
           <SubTitle>Favorites</SubTitle>
-          <List row={cardMode}>{favorites.map(renderContact)}</List>
+          <List data-testid="list" row={cardMode}>
+            {favorites.map(renderContact)}
+          </List>
           <Separator />
         </>
       ) : (
         ""
       )}
 
-      <List row={cardMode}>{notFavorites.map(renderContact)}</List>
+      <List data-testid="list" row={cardMode}>
+        {notFavorites.map(renderContact)}
+      </List>
       <Separator />
     </ListContainer>
   );

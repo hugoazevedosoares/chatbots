@@ -22,7 +22,15 @@ const FavoriteToggle: React.FC<
     handleFavorite(contact, !contact.favorite);
   }
 
-  return <Image onClick={onClick} src={src} alt={alt} style={style} />;
+  return (
+    <Image
+      data-testid="image"
+      onClick={onClick}
+      src={src}
+      alt={alt}
+      style={style}
+    />
+  );
 };
 
 export default FavoriteToggle;

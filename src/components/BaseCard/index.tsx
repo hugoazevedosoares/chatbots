@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { BaseContactComponent } from "../BaseContactComponents";
 
 export const Card = styled(BaseContactComponent)`

@@ -1,14 +1,15 @@
 import React from "react";
 import {
   HashRouter as Router,
-  Switch,
-  Route,
   Redirect,
+  Route,
+  Switch,
 } from "react-router-dom";
-import Home from "./pages/Home";
-import ChatBot from "./pages/ChatBot";
-import Header from "./components/Header";
+
 import Footer from "./components/Footer";
+import Header from "./components/Header";
+import ChatBot from "./pages/ChatBot";
+import Home from "./pages/Home";
 import { AppContainer } from "./styles";
 
 function App() {

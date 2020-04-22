@@ -1,9 +1,10 @@
 import React from "react";
-import { Image, BotName, ShortName } from "./styles";
+
 import { ContactBlockProps } from "../../types/contact";
-import FavoriteToggle from "../FavoriteToggle";
-import { StyledLink } from "../BaseContactComponents";
 import { Card } from "../BaseCard";
+import { StyledLink } from "../BaseContactComponents";
+import FavoriteToggle from "../FavoriteToggle";
+import { BotName, Image, ShortName } from "./styles";
 
 const ContactCard: React.FC<ContactBlockProps> = ({
   contact,
